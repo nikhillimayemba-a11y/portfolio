@@ -7,15 +7,15 @@
 <meta name="description" content="AI Product Manager building GenAI that earns its place — RAG, agents and document intelligence shipped to production."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0A0908; --s1:#111009; --s2:#181510; --card:#1C1914; --card2:#231F19;
   --t:#F0EAD9; --soft:#A09276; --muted:#665D50; --line:#2A2419;
   --lime:#C6FF47; --clay:#FF7A52; --green:#3DDB82;
   --crafto:#A78BFF; --uber:#3DDBA0; --zepto:#8A3FFC; --meesho:#F43397; --zomato:#E23744;
-  --d:"Syne",sans-serif; --b:"Plus Jakarta Sans",system-ui,sans-serif;
-  --m:"JetBrains Mono",ui-monospace,monospace; --max:1160px;
+  --d:"DM Serif Display",Georgia,serif; --b:"Inter",system-ui,sans-serif;
+  --m:"IBM Plex Mono",ui-monospace,monospace; --max:1160px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -52,11 +52,11 @@ nav.on{background:rgba(10,9,8,.9);backdrop-filter:blur(14px);border-color:var(--
 .av .g{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;position:relative}
 .av .g::after{content:"";position:absolute;inset:-5px;border-radius:50%;background:var(--green);opacity:.3;animation:pulse 2s infinite}
 @keyframes pulse{0%{transform:scale(1);opacity:.4}70%{transform:scale(2.4);opacity:0}100%{opacity:0}}
-.hn{font-family:var(--d);font-weight:800;line-height:.93;letter-spacing:-.04em;font-size:clamp(4.2rem,10.5vw,9.5rem);margin-bottom:0}
-.hn .rot-wrap{display:block;color:var(--lime);overflow:hidden;max-height:1em}
+.hn{font-family:var(--d);font-weight:400;line-height:.95;letter-spacing:-.02em;font-size:clamp(3.4rem,7.5vw,7rem);margin-bottom:0}
+.hn .rot-wrap{display:block;color:var(--lime);min-height:1.05em;overflow:visible}
 .rot-in{display:inline-block;animation:ri .45s ease}
-@keyframes ri{from{opacity:0;transform:translateY(.8em)}to{opacity:1;transform:none}}
-.hero-port{width:clamp(160px,18vw,240px);flex-shrink:0;margin-top:6px}
+@keyframes ri{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero-port{width:clamp(160px,16vw,210px);flex-shrink:0;margin-top:6px}
 .portrait{aspect-ratio:1;border-radius:50%;border:2px solid var(--line);overflow:hidden;position:relative;
   background:var(--card);box-shadow:0 0 0 6px rgba(198,255,71,.08)}
 .portrait::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 30% 20%,rgba(198,255,71,.18),transparent 55%)}
@@ -135,9 +135,9 @@ nav.on{background:rgba(10,9,8,.9);backdrop-filter:blur(14px);border-color:var(--
 
 /* PULL QUOTE */
 .pq{padding:100px 0;overflow:hidden}
-.pq .qt{font-family:var(--d);font-weight:800;font-size:clamp(2.4rem,6vw,4.8rem);letter-spacing:-.04em;line-height:.97;max-width:18ch}
+.pq .qt{font-family:var(--d);font-weight:400;font-size:clamp(2.4rem,6vw,4.8rem);letter-spacing:-.02em;line-height:1;max-width:18ch;color:var(--t)}
 .pq .qt em{font-style:normal;color:var(--lime)}
-.pq .qs{font-family:var(--m);font-size:.8rem;color:var(--muted);margin-top:28px}
+.pq .qs{font-family:var(--m);font-size:.8rem;color:var(--soft);margin-top:28px}
 
 /* MARQUEES */
 .mq{overflow:hidden;border-bottom:1px solid var(--line);padding:20px 0;white-space:nowrap}
@@ -150,7 +150,7 @@ nav.on{background:rgba(10,9,8,.9);backdrop-filter:blur(14px);border-color:var(--
 .tr.tools .it{font-family:var(--m);font-weight:500;font-size:.95rem;color:var(--muted);text-transform:none}
 
 /* CASES */
-section.cs{padding:72px 0}
+section.cs{padding:52px 0}
 .cases{display:flex;flex-direction:column;gap:20px}
 .case{border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .3s,border-color .3s}
 .case:hover{transform:translateY(-3px);border-color:var(--c)}
@@ -235,7 +235,7 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
 .ss:last-child{border:none}
 .ss .ktag{display:block;margin-bottom:13px;color:var(--c)}
 .ss h2{font-family:var(--d);font-weight:700;font-size:1.75rem;letter-spacing:-.02em;margin-bottom:17px}
-.ss p{font-size:1.04rem;color:var(--soft);margin-bottom:15px}
+.ss p{font-size:1.07rem;color:var(--soft);margin-bottom:16px;line-height:1.7}
 .ss p strong{color:var(--t);font-weight:600}
 .ss ul{list-style:none;margin:6px 0 14px}
 .ss ul li{padding-left:22px;position:relative;font-size:1.02rem;color:var(--soft);margin-bottom:11px}
@@ -260,7 +260,7 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
   .nl{position:fixed;inset:60px 0 auto 0;background:var(--s1);flex-direction:column;align-items:flex-start;
     padding:22px 32px;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s}
   .nl.open{transform:none}.bg{display:flex}
-  .hero-top{flex-direction:column-reverse;gap:28px}
+  .hero-top{flex-direction:column;gap:24px}
   .hero-port{width:160px;margin:0}
   .hero-lede{grid-template-columns:1fr}
   .bento{grid-template-columns:1fr 1fr;grid-template-rows:auto}.bv.big{grid-row:auto;grid-column:1/3}
@@ -285,7 +285,7 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
   font-family:var(--m);font-size:.64rem;background:rgba(10,9,8,.75);backdrop-filter:blur(6px);
   border:1px solid var(--line);padding:6px 12px;border-radius:30px;color:var(--t);white-space:nowrap}
 /* PM SKILLS STRIP */
-.skills-strip{border-bottom:1px solid var(--line);padding:34px 0;background:var(--s1)}
+.skills-strip{border-bottom:1px solid var(--line);padding:26px 0 20px;background:var(--s1)}
 .ss-row{display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap}
 .ss-label{font-family:var(--m);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
   color:var(--muted);white-space:nowrap;min-width:68px;padding-top:7px}
@@ -361,6 +361,31 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
   padding:3px 8px;border-radius:6px;margin-left:7px;white-space:nowrap}
 .sh-full{width:100%}
 .sh-full li{grid-template-columns:auto 1fr auto}
+
+/* DM Serif Display is weight 400 only — override bold declarations */
+.hn,.sh h2,.ct h3,.csd h1,.pq .qt,h1,h2{font-weight:400!important}
+.brand,.logo,.cno,.cn,.bno,.bn{font-family:var(--m);font-weight:600}
+/* Better letter spacing for serif display */
+.sh h2{letter-spacing:-.01em;line-height:1.05}
+.ct h3{letter-spacing:-.01em}
+.csd h1{letter-spacing:-.01em}
+.pq .qt{letter-spacing:-.015em}
+/* Availability badge — Inter works better at small sizes */
+.av{font-family:var(--m);font-size:.7rem}
+/* Hero lede uses Inter nicely */
+.hl-l p{line-height:1.65}
+/* Section number in display */
+.no{font-family:var(--m);font-weight:600}
+/* Case number stays mono */
+.cbadge{font-family:var(--m)}
+
+.ach-text{font-family:var(--b);font-size:1rem;color:var(--soft);text-transform:none;letter-spacing:0}
+.ach-text strong{color:var(--t);font-weight:600;font-family:var(--b)}
+
+@media(max-width:860px){
+  .hero-port{width:130px;margin:0 auto}
+  .portrait{box-shadow:0 0 0 4px rgba(198,255,71,.1)}
+}
 </style>
 </head>
 <body>
@@ -382,7 +407,7 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
 <header class="hero"><div class="w">
   <div class="hero-top">
     <div class="hero-left">
-      <div class="av" data-r><span class="g"></span>Senior PM · APM · PM · Pune (1st) · Bengaluru · Hyderabad · Available now</div>
+      <div class="av" data-r><span class="g"></span>APM · PM · Pune (1st) · Bengaluru · Hyderabad · Available now</div>
       <h1 class="hn" data-r>
         <span style="display:block">Nikhil</span>
         <span class="rot-wrap" id="rot"><span class="rot-in">Limaye.</span></span>
@@ -641,13 +666,13 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
 <div class="shipped"><div class="w">
   <div class="sh" data-r><span class="no">03</span><h2>What I've done</h2></div>
   <ul class="sh-r sh-full" data-r>
-    <li><span class="ar">→</span><span class="st"><strong>Owned end-to-end roadmap for a B2B loyalty SaaS</strong> — managed 80+ item backlog, drove 25% feature adoption lift and 30% fewer support escalations across 15+ enterprise clients <span class="org-tag">B2B SaaS · LJI</span></span><span class="met">25% adoption↑</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Ran 30+ customer-facing discovery and feedback sessions</strong> — synthesised findings that cut post-release defects by 25% and reduced scope rework by 30% across 12 feature releases <span class="org-tag">LJI</span></span><span class="met">25% defects↓</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Built natural-language search across ~4 lakh oil &amp; gas files</strong> — enabling geologists to query unstructured documents via Azure AI Search and RAG <span class="org-tag">Enterprise AI · e-Zest</span></span><span class="met">~4L files</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Led discovery and delivery for 3 GenAI pilots end-to-end</strong> — conversational AI, document intelligence and analytics platforms, each taken to production within the same engagement period <span class="org-tag">e-Zest</span></span><span class="met">3 pilots</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Defined AI use-case strategy and evaluation approach</strong> across RAG-based pilots — 85%+ query resolution validated against ground-truth Q&amp;A pairs during enterprise pilot evaluation <span class="org-tag">GenAI · e-Zest</span></span><span class="met">85%+ queries</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Reduced client manual effort by 35%</strong> across document intelligence engagements — UWI string extraction, Azure Document Intelligence, structured chat interface <span class="org-tag">e-Zest</span></span><span class="met">35% effort↓</span></li>
-    <li><span class="ar">→</span><span class="st"><strong>Maintained 4.2/5 client satisfaction</strong> — measured via sprint review feedback and go-live checkpoints throughout engagement lifecycle <span class="org-tag">e-Zest</span></span><span class="met">4.2/5</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Owned end-to-end roadmap for a B2B loyalty SaaS</strong> — managed 80+ item backlog, drove 25% feature adoption lift and 30% fewer support escalations across 15+ enterprise clients <span class="org-tag">B2B SaaS · LJI</span></span><span class="met">25% adoption↑</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Ran 30+ customer-facing discovery and feedback sessions</strong> — synthesised findings that cut post-release defects by 25% and reduced scope rework by 30% across 12 feature releases <span class="org-tag">LJI</span></span><span class="met">25% defects↓</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Built natural-language search across ~4 lakh oil &amp; gas files</strong> — enabling geologists to query unstructured documents via Azure AI Search and RAG <span class="org-tag">Enterprise AI · e-Zest</span></span><span class="met">~4L files</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Led discovery and delivery for 3 GenAI pilots end-to-end</strong> — conversational AI, document intelligence and analytics platforms, each taken to production within the same engagement period <span class="org-tag">e-Zest</span></span><span class="met">3 pilots</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Defined AI use-case strategy and evaluation approach</strong> across RAG-based pilots — 85%+ query resolution validated against ground-truth Q&amp;A pairs during enterprise pilot evaluation <span class="org-tag">GenAI · e-Zest</span></span><span class="met">85%+ queries</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Reduced client manual effort by 35%</strong> across document intelligence engagements — UWI string extraction, Azure Document Intelligence, structured chat interface <span class="org-tag">e-Zest</span></span><span class="met">35% effort↓</span></li>
+    <li><span class="ar">→</span><span class="ach-text"><strong>Maintained 4.2/5 client satisfaction</strong> — measured via sprint review feedback and go-live checkpoints throughout engagement lifecycle <span class="org-tag">e-Zest</span></span><span class="met">4.2/5</span></li>
   </ul>
 </div></div>
 
@@ -692,7 +717,7 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
     </div>
   </div>
   <div data-r style="text-align:center;padding:40px 0 20px">
-    <h2 style="font-family:var(--d);font-weight:800;font-size:clamp(2.4rem,8vw,6.5rem);letter-spacing:-.05em;line-height:.9">Let's<br>build something.</h2>
+    <h2 style="font-family:var(--d);font-weight:400;font-size:clamp(2.4rem,8vw,6.5rem);letter-spacing:-.02em;line-height:.95;color:var(--t)">Let's<br>build something.</h2>
     <div class="ct-links" style="margin-top:26px">
       <a href="mailto:nikhil.limayemba@gmail.com">nikhil.limayemba@gmail.com</a>
       <a href="https://www.linkedin.com/in/nikhil-limayemba/" target="_blank" rel="noopener">LinkedIn ↗</a>
