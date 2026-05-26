@@ -899,12 +899,12 @@ footer{padding:28px 0;border-top:1px solid var(--line)}
     c.addEventListener('click',function(){location.hash=c.getAttribute('data-go');});
   });
   ['rBtn','rBtn2'].forEach(function(id){var el=document.getElementById(id);
-    if(el)el.addEventListener('click',function(e){e.preventDefault();const a=document.createElement('a');a.href='Nikhil_Limaye_Resume_ATPM.pdf';a.download='Nikhil_Limaye_Resume.pdf';a.click();});
+    if(el)el.addEventListener('click',function(e){e.preventDefault();const a=document.createElement('a');a.href='assets/Nikhil_Limaye_Resume_PM.pdf';a.download='Nikhil_Limaye_Resume_PM.pdf';a.click();});
   });
   var li=document.getElementById('liLink');
   if(li)li.addEventListener('click',function(e){e.preventDefault();window.open('https://www.linkedin.com/in/nikhil-limayemba/','_blank');});
   var ar=document.getElementById('abtResBtn');
-  if(ar)ar.addEventListener('click',function(e){e.preventDefault();alert('Wire to your résumé PDF.');});
+  if(ar)ar.addEventListener('click',function(e){e.preventDefault();const a=document.createElement('a');a.href='assets/Nikhil_Limaye_Resume_PM.pdf';a.download='Nikhil_Limaye_Resume_PM.pdf';a.click();});
   window.addEventListener('hashchange',route);
   route();
 })();
